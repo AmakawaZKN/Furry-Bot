@@ -90,7 +90,7 @@ if (opts['big-qr'] || opts['server']) conn.ev.on('qr', qr => generate(qr, { smal
 if (opts['server']) require('./server')(global.conn, PORT)
 
 async function connectionUpdate(update) {
-  console.log(require('chalk').redBright('Mengaktifkan Bot, Harap tunggu sebentar...'))
+  console.log(require('chalk').redBright('Bentar cokk.. OTW nyala'))
   const { connection, lastDisconnect } = update
   global.timestamp.connect = new Date
   if (lastDisconnect && lastDisconnect.error && lastDisconnect.error.output && lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut && conn.ws.readyState !== WebSocket.CONNECTING) {
@@ -141,19 +141,19 @@ global.reloadHandler = function (restatConn) {
 │ ✧ *Umur:*
 │ ✧ *Status:*
 │ ✧ *Askot:*
-╰◪
+╰◪ 
   
               *◌  ⃝✧⪼ Deskripsi Group ミ*
   @desc`
-  conn.bye = 'Selamat tinggal @user!'
-  conn.spromote = '@user sekarang admin!'
-  conn.sdemote = '@user sekarang bukan admin!'
+  conn.bye = 'Kena mental kak? ><'
+  conn.spromote = '@user naik jabatan euyy..'
+  conn.sdemote = '@user turun jabatan euyy..'
   conn.sDesc = 'Deskripsi telah diubah ke \n@desc'
   conn.sSubject = 'Judul grup telah diubah ke \n@subject'
   conn.sIcon = 'Icon grup telah diubah!'
   conn.sRevoke = 'Link group telah diubah ke \n@revoke'
-  conn.sAnnounceOn = 'Group telah di tutup!\nsekarang hanya admin yang dapat mengirim pesan.'
-  conn.sAnnounceOff = 'Group telah di buka!\nsekarang semua peserta dapat mengirim pesan.'
+  conn.sAnnounceOn = 'Awokawok di close\nWkwk gabisa kirim pesan ><'
+  conn.sAnnounceOff = 'Halo! dibuka nih..\nHave Fun ><'
   conn.sRestrictOn = 'Edit Info Grup di ubah ke hanya admin!'
   conn.sRestrictOff = 'Edit Info Grup di ubah ke semua peserta!'
 
