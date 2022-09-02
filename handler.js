@@ -28,21 +28,21 @@ module.exports = {
         global.fake = global.fake
         global.fkontak = global.fkontak
         global.doc = pickRandom(["application/vnd.ms-excel", "application/vnd.openxmlformats-officedocument.presentationml.presentation", "application/msword", "application/pdf"])
-        global.img = 'https://telegra.ph/file/0c567eac403737766688f.jpg'
+        global.img = 'https://telegra.ph/file/9600fa4dda16a92ecb644.jpg'
         global.fla = pickRandom(global.flaaa)
         global.namabot = conn.user.name
-        global.packname = '© CUTE IQ-MD'
-        global.author = 'Made By Ziv San © 2022'
-        global.packname2 = 'Made With'
-        global.author2 = 'Cute Bot By Ziv San © 2022'
-        global.wm3 = '·͟͟͟͟͟͟͞͞͞͞͞͞Made By Ziv San˚'
-        global.wm2 = '© CUTE IQ-MD' + ' ' + 'By Ziv San'
-        global.wm = '© CUTE IQ-MD'
+        global.packname = 'You know Zy?'
+        global.author = 'Made By Zykuan'
+        global.packname2 = 'Know Zy?'
+        global.author2 = 'Amakawa Zykuan By Zy © 2022'
+        global.wm3 = '·͟͟͟͟͟͟͞͞͞͞͞͞Made By Zy˚'
+        global.wm2 = 'Amakawa ZYKUAN' + ' ' + 'By Zy'
+        global.wm = '© Amakawa Zykuan'
         global.colong1 = 'Ciss 📸'
-        global.colong2 = 'By Haori & Ziv San'
+        global.colong2 = 'By Amakawa & Zykuan'
         global.kontak2 = [
-        ['16199961931', 'Ziv San', 'Creator Bot', 'Zivsan@support.com', true],
-        ['6282179137771', 'CUTE IQ-MD', 'Bot WhatsApp', 'Just Bot', true]
+        ['628979440862', 'Zy', 'Creator Bot', 'Zykuan@support.com', true],
+        ['6282133532380', 'Amakawa Zykuan', 'Bot WhatsApp', 'Just Bot', true]
         ]
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
@@ -287,9 +287,9 @@ module.exports = {
                     if (!('descUpdate' in chat)) chat.descUpdate = true
                     if (!('stiker' in chat)) chat.stiker = false
                     if (!('delete' in chat)) chat.delete = false
-                    if (!('antiLink' in chat)) chat.antiLink = true
+                    if (!('antiLink' in chat)) chat.antiLink = false
                     if (!isNumber(chat.expired)) chat.expired = 0
-                    if (!('antiBadword' in chat)) chat.antiBadword = true
+                    if (!('antiBadword' in chat)) chat.antiBadword = false
                     if (!('antispam' in chat)) chat.antispam = true
                     if (!('antitroli' in chat)) chat.antitroli = false
                     if (!('antivirtex' in chat)) chat.antivirtex = false
@@ -315,11 +315,11 @@ module.exports = {
                     delete: false,
                     antiLink: true,
                     expired: 0,
-                    antiBadword: true,
+                    antiBadword: false,
                     antispam: true,
                     antitroli: false,
-                    antivirtex: false,
-                    viewonce: true,
+                    antivirtex: true,
+                    viewonce: false,
                     nsfw: false,
                     simi: false,
                     clear: false,
@@ -640,19 +640,19 @@ module.exports = {
                             let wel = API('hardianto', '/api/welcome3', {
                                 profile: pp,
                                 name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/a36809ab7862a77d18ac0.jpg',
+                                bg: 'https://telegra.ph/file/eaef33730e410316f592f.jpg',
                                 namegb: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
                             let lea = API('hardianto', '/api/goodbye3', {
                                 profile: pp,
                                 name: await this.getName(user),
-                                bg: 'https://telegra.ph/file/a36809ab7862a77d18ac0.jpg',
+                                bg: 'https://telegra.ph/file/eaef33730e410316f592f.jpg',
                                 namegb: await this.getName(id),
                                 member: groupMetadata.participants.length
                             })
                             /*await this.send3TemplateButtonImg(id, action === 'add' ? wel : lea, text, wm, action === 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'FokusID')*/
-   await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'Cute IQ-MD', fkontak,{
+   await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'Amakawa Zy', fkontak,{
   contextInfo: {mentionedJid: [user],
     externalAdReply :{
     mediaUrl: linkyt,
@@ -741,9 +741,9 @@ global.dfail = async (type, m, conn) => {
         group: 'Perintah ini hanya dapat digunakan di grup!',
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        nsfw: 'NSFW tidak aktif, Silahkan hubungi Team Bot Discussion untuk mengaktifkan fitur ini!',
+        botAdmin: 'Kakakk yang baik hati >< jadiin aku *Admin* dulu',
+        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Zykuan.16*',
+        nsfw: 'Samnge? mana sama kartun lagi awokawok,
         rpg: 'RPG tidak aktif, Silahkan hubungi Team Bot Discussion Untuk mengaktifkan fitur ini!',
         restrict: 'Fitur ini di *disable*!'
     /*}[type]
@@ -802,7 +802,7 @@ function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
 
-global.thumb = 'https://telegra.ph/file/61f2d6d9694b49a2ce7aa.jpg'
+global.thumb = 'https://telegra.ph/file/63e35ba35ff6ecd147339.jpg'
 
 global.flaaa = [
  'https://flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=water-logo&script=water-logo&fontsize=90&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextColor=%23000&shadowGlowColor=%23000&backgroundColor=%23000&text=',
