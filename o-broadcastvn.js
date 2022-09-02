@@ -15,7 +15,7 @@ let handler = async (m, { conn, text }) => {
     surface : 404,
     message: `© Zy BROADCAST\nFrom ${conn.getName(m.sender)} 🌠`, 
     orderTitle: `▮By Zykuan ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/d22003d24ff779724cc58.jpg')).buffer(),
+    thumbnail: await (await fetch('https://telegra.ph/file/9600fa4dda16a92ecb644.jpg')).buffer(),
     }
     }
     }
@@ -38,7 +38,7 @@ ptt: true, contextInfo: { forwardingScore: 999, isForwarded: true,
              description: '',  
              mediaType: 2, 
            thumbnail: await (await fetch(fla + 'Broadcast')).buffer(), 
-          mediaUrl: `https://www.instagram.com/zykuan.144p/` 
+          mediaUrl: `https://www.instagram.com/zykuan.144p` 
          } 
       } 
    })
