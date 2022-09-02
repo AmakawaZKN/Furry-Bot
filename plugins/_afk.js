@@ -17,7 +17,7 @@ Selama ${this.clockString(new Date - user.afk)}
         if (!afkTime || afkTime < 0) continue
         let reason = user.afkReason || ''
         this.sendTemplateButtonDoc(m.chat, img, `
-Jangan tag dia!
+Jangan tag anjc!
 Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
 Selama ${this.clockString(new Date - afkTime)}
 `.trim(), wm, 'Menu', '.menu', m)
